@@ -19,11 +19,11 @@ app.get('/article-one', function (req, res) {
 });
     
 app.get('/article-two', function (req, res) {
-    res.send('Article One Requested...');
+    res.send('Article Two Requested...');
 });
 
 app.get('/article-three', function (req, res) {
-    res.send('Article One Requested...');
+    res.send('Article Three Requested...');
 });
 
 app.get('/ui/madi.png', function (req, res) {
