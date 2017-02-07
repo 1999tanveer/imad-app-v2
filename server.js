@@ -8,7 +8,7 @@ app.use(morgan('combined'));
 var articleone={
     title: "Article One|Tanveer Ahmad",
     heading:"Article One",
-    date:"07 feb 2017"
+    date:"07 feb 2017",
     content:`
          <p>
             This is my first article on page article one.This page was posted on 06 february 2017 at 11.40 PM. 
@@ -26,8 +26,8 @@ var articleone={
 function createtemplate(data){
     var title = data.title;
     var heading = data.heading;
-    var data = data.date;
-    var content = data.content
+    var date = data.date;
+    var content = data.content;
     
 var htmltemplate=`
     <html>
