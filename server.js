@@ -65,7 +65,7 @@ var htmltemplate=`
 
 return htmltemplate;
     
-};
+}
 
 
 
