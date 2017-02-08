@@ -7,7 +7,7 @@ app.use(morgan('combined'));
 
 var articles={
     
-    articleone:{
+    'article-one':{
     title: "Article One|Tanveer Ahmad",
     heading:"Article One",
     date:"07 feb 2017",
@@ -22,7 +22,7 @@ var articles={
             I am rellay happy to have you as a viewer of my webapp. For any comments or suggestions mail to 1999tanveer@gmail.com or tweet to @tanveersboa.
         </p>`
     },
-    articletwo:{
+    'article-two':{
         
         title: "Article Two|Tanveer Ahmad",
         heading:"Article Two",
@@ -36,7 +36,7 @@ var articles={
             </p>`
             
     },
-    articlethree:{
+    'article-three':{
         
         title: "Article Two|Tanveer Ahmad",
         heading:"Article Two",
@@ -106,8 +106,9 @@ app.get('/ui/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
 });
 
-app.get('/article-one', function (req, res) {
-    res.send(createtemplate(articles[articleone]));
+app.get('/:articlename', function (req, res) {
+    var articlename = req.params.articlename;
+    res.send(createtemplate(articles[articlename]));
 });
     
 app.get('/article-two', function (req, res) {
