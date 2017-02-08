@@ -5,7 +5,9 @@ var path = require('path');
 var app = express();
 app.use(morgan('combined'));
 
-var articleone={
+var articles={
+    
+    articleone:{
     title: "Article One|Tanveer Ahmad",
     heading:"Article One",
     date:"07 feb 2017",
@@ -19,7 +21,34 @@ var articleone={
         <p>
             I am rellay happy to have you as a viewer of my webapp. For any comments or suggestions mail to 1999tanveer@gmail.com or tweet to @tanveersboa.
         </p>`
-    
+    },
+    articletwo:{
+        
+        title: "Article Two|Tanveer Ahmad",
+        heading:"Article Two",
+        date:"09 feb 2017",
+        content:`
+             <p>
+                This is my Second article on page article one.This page was posted on 06 february 2017 at 11.40 PM. 
+            </p>
+            <p>
+               Coming Soon...
+            </p>`
+            
+    },
+    articlethree:{
+        
+        title: "Article Two|Tanveer Ahmad",
+        heading:"Article Two",
+        date:"09 feb 2017",
+        content:`
+             <p>
+                This is my Second article on page article one.This page was posted on 06 february 2017 at 11.40 PM. 
+            </p>
+            <p>
+               Coming Soon...
+            </p>`
+    }
 };
 
 
@@ -82,11 +111,11 @@ app.get('/article-one', function (req, res) {
 });
     
 app.get('/article-two', function (req, res) {
-    res.sendFile(path.join(__dirname, 'ui', 'article-two.html'));
+    res.send(createtemplate(articletwo));
 });
 
 app.get('/article-three', function (req, res) {
-    res.sendFile(path.join(__dirname, 'ui', 'article-three.html'));
+    res.send(createtemplate(articlethree));
 });
 
 app.get('/ui/madi.png', function (req, res) {
