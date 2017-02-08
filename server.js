@@ -112,7 +112,7 @@ app.get('/:articlename', function (req, res) {
 });
     
 app.get('/article-two', function (req, res) {
-    res.send(createtemplate(articles[articletwo]));
+    res.send("Hai");
 });
 
 app.get('/article-three', function (req, res) {
