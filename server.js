@@ -107,15 +107,15 @@ app.get('/ui/style.css', function (req, res) {
 });
 
 app.get('/article-one', function (req, res) {
-    res.send(createtemplate(articleone));
+    res.send(createtemplate(articles[articleone]));
 });
     
 app.get('/article-two', function (req, res) {
-    res.send(createtemplate(articletwo));
+    res.send(createtemplate(articles[articletwo]));
 });
 
 app.get('/article-three', function (req, res) {
-    res.send(createtemplate(articlethree));
+    res.send(createtemplate(articles[articlethree]));
 });
 
 app.get('/ui/madi.png', function (req, res) {
