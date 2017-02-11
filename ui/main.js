@@ -10,7 +10,7 @@ var img = document.getElementById('salih');
 var marginleft=0;
 
 function moveright() {
- if(marginleft<100) {
+ if(marginleft<1000) {
      marginleft=marginleft+10;
      img.style.marginLeft = marginleft + 'px';
  }
