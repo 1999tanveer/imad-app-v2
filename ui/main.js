@@ -16,5 +16,5 @@ function moveright() {
 
 img.onclick=function() {
     img.style.marginleft=100;
-var interval = setInterval(moveright,20);
+   //var interval = setInterval(moveright,20);
 };
