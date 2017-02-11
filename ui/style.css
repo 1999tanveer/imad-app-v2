@@ -12,6 +12,10 @@ body {
     font-size: 300%;
 }
 
+.text-med {
+    font-size: 150%;
+}
+
 .bold {
     font-weight: bold;
 }
