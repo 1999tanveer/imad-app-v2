@@ -21,13 +21,17 @@ body {
 }
 
 
-.img-new{
+.img-round{
     height: 300px;
     width: 298px;
     border-radius: 250px;
 }
 
-
+.img-rect{
+    height: 300px;
+    width: 450px;
+    border-radius: 250px;
+}
 
   .container{
             
