@@ -112,7 +112,7 @@ app.get('/:articlename', function (req, res) {
 });
     
 
-app.get('/ui/1f602.png', function (req, res) {
+app.get('/ui/1f602.png', function (req, res) {   //A smiling emoji.
   res.sendFile(path.join(__dirname, 'ui', '1f602.png'));
 });
 
@@ -120,9 +120,14 @@ app.get('/ui/madi.png', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'madi.png'));  
 });
 
-app.get('/ui/20160913_110849-min.png', function (req, res) {
+app.get('/ui/20160913_110849-min.png', function (req, res) {  //My photo
   res.sendFile(path.join(__dirname, 'ui', '20160913_110849-min.png'));  
 });
+
+app.get('/ui/madi.png', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'madi.png'));  
+});
+
 
 var port = 8080; // Use 8080 for local development because you might already have apache running on 80
 app.listen(8080, function () {
