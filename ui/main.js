@@ -1,4 +1,5 @@
 console.log('Loaded!');
+elipse(200,200,200.300);
 
 //Changing the content in html.
 var element = document.getElementById('intro');
