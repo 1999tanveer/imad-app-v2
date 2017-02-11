@@ -112,8 +112,8 @@ app.get('/:articlename', function (req, res) {
 });
     
 
-app.get('/ui/madi.png', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'madi.png'));
+app.get('/ui/1f602.png', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', '1f602.png'));
 });
 
 app.get('/ui/madi.png', function (req, res) {
