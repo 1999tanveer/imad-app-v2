@@ -10,8 +10,15 @@ var img = document.getElementById('salih');
 var marginleft=0;
 
 function moveright() {
- marginleft=marginleft+10;
- img.style.marginLeft = marginleft + 'px';
+ if(marginleft<100) {
+     marginleft=marginleft+10;
+     img.style.marginLeft = marginleft + 'px';
+ }
+ else{
+     marginleft=0;
+     img.style.marginLeft = marginleft + 'px';
+ }
+    
 }
 
 img.onclick=function() {
