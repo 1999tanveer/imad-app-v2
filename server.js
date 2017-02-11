@@ -116,6 +116,10 @@ app.get('/ui/madi.png', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'madi.png'));
 });
 
+app.get('/ui/madi.png', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'madi.png'));  
+});
+
 //app.get('/ui//20160913_110849-min.png', function (req, res) {
  // res.sendFile(path.join(__dirname, 'ui', 'madi.png'));
 //});
