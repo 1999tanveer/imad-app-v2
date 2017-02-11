@@ -11,10 +11,10 @@ var leftmar=0;
 
 function moveright() {
  leftmar=leftmar+10;
- img.style.marginleft = leftmar+'px';
+ img.style.marginleft = leftmar + 'px';
 }
 
 img.onclick=function() {
-    alert('yes');
+    img.style.marginleft=100;
 var interval = setInterval(moveright,20);
 };
