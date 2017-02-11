@@ -10,12 +10,12 @@ var img = document.getElementById('salih');
 var marginleft=0;
 
 function moveright() {
- if(marginleft<1000) {
+ if(marginleft<950) {
      marginleft=marginleft+10;
      img.style.marginLeft = marginleft + 'px';
  }
  else{
-     marginleft=-800;
+     marginleft=-900;
      img.style.marginLeft = marginleft + 'px';
  }
     
