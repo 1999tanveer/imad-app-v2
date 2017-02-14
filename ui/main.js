@@ -26,10 +26,15 @@ img.onclick=function() {
 };
 
 
-
+//counter code
 var counter=0;
 var button = document.getElementById("counter");
 button.onclick=function(){
+    //Request couter end pt
+    
+    //capture the response and store it in a variable
+    
+    //Rendering the variable
     counter = counter + 1;    
     var span = document.getElementById("count");
     span.innerHTML = counter.toString();
