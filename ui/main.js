@@ -21,7 +21,7 @@ else{
     
 }
 
-mg.onclick=function() {
+img.onclick=function() {
   var interval = setInterval(moveright,20);
 };
 
