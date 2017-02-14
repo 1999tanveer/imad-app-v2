@@ -29,7 +29,7 @@ img.onclick=function() {
 //counter code
 var counter=0;
 var button = document.getElementById("counter");
-button.onclick=function(){
+//button.onclick=function(){
     
     //create a XML req
        var request= new XMLHttpRequest();
@@ -44,7 +44,7 @@ button.onclick=function(){
                  span.innerHTML = counter.toString();
              }
          }  
-       };
+   //    };
     
     //Making the request
        request.open('GET','http://user-1999tanveer.imad.hasura-app.io/counter',true);
